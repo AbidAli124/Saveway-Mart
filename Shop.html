@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.html</title>
+  <!--  Bootstrap CSS -->
+  <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--  CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon1.png">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section class="main">
+    <nav class="navbar navbar-expand-lg fixed-top nav-bg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="images/new-llogo.png" alt="mart icon" width="100" height="40" class="rounded logo">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Saveway Super Market</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 text-center" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2 text-center" href="Shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 text-center" href="Offer.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 text-center" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 text-center" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <a href="Login.html" class="login-anker"> <button class="btn Nav_btn ms-lg-3">Login</button></a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Nav-End -->
+    <!-- Shop section -->
+    <section class="container-fluid text-center ">
+      <section id="fruits">
+        <div class="container rounded pt-5 ">
+          <div class="heading  pt-5 ">
+            <h1 class="hero-h text-white pt-5 ps-4"> Fresh Market Shop 🛒
+            </h1>
+            <p class="hero-p text-white">Premium quality products delivered fresh to your door</p>
+          </div>
+        </div>
+        <div class="container rounded grad-section8">
+          <h2 class="card-title fw-bold text-white f-f "> <span>🍎</span>Fresh Fruits</h2>
+          <p class="fw-bold text-white fs-4 f-f"> Sweet, juicy, and packed with vitamins</p>
+
+          <!-- Card-1 apples -->
+          <div class="category-section grad-section8">
+            <div class="row  ">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh apples logo.jpg" alt="fresh apples" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Red Apples</h5>
+                    <p class="card-text text-muted">Crisp Honeycrisp apples, perfect for snacking</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$3.99/lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card-2 Bananas-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh bananas.jpg" alt=" bananas" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body ">
+                    <h5 class="card-title">Bananas</h5>
+                    <p class="card-text text-muted">Ripe yellow bananas, great for smoothies</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag me-2">$3/dozen</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-3 Straw berry-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
+                <div class="card product-card h-100 w-100">
+                  <div class="product-image ">
+                    <img src="images/fresh strawberry container with a logo sticker of saveway.jpg"
+                      alt="fresh strawberry" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body ">
+                    <h5 class="card-title">Strawberries</h5>
+                    <p class="card-text text-muted">Sweet strawberries, locally grown</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$5.99/box</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-4 Oranges-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card">
+                  <div class="product-image ">
+                    <img src="images/fresh oranges with a logo.jpg" alt="fresh Orange" class="w-100 rounded-top ">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Oranges</h5>
+                    <p class="card-text text-muted">Fresh Juicy navel oranges, vitamin C rich</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$4.99/3lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veges section -->
+
+        <div class="veges-section  mt-5 ">
+          <div class="container bg-light rounded grad-section7">
+            <h2 class="fw-bold text-white f-f"> <span>🥕</span>Fresh Vegetables</h2>
+            <p class="fw-bold text-white fs-4 f-f"> Farm-fresh vegetables for healthy living</p>
+
+            <!-- Card-1 Carrots -->
+            <div class="row  ">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh carrots  with a logo sticker of saveway.jpg" alt="fresh carrots"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Carrots</h5>
+                    <p class="card-text text-muted">Fresh organic carrots, crunchy and sweet</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$2.99/2lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-2 Lettuce-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh  lattus with a logo sticker of saveway.jpg" alt="Lettuce"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Lettuce</h5>
+                    <p class="card-text text-muted">Crisp romaine lettuce, perfect for salads</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$1.99/head</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-3 Tomatoes -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh tomatoes in a containerwith a logo sticker of saveway.jpg" alt="Tomatoes"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Tomatoes</h5>
+                    <p class="card-text text-muted">Vine-ripened red tomatoes, full of flavor</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$3.49/lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-4 Broccoli-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card">
+                  <div class="product-image ">
+                    <img src="images/fresh brocolis with a logo sticker of saveway.jpg" alt="brocolis"
+                      class="w-100 rounded-top ">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Broccoli</h5>
+                    <p class="card-text text-muted">Hand-picked organic broccoli crowns for you.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$2.79/head</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Dairy Products -->
+      <section id="dairy">
+        <div class="veges-section  mt-5">
+          <div class="container bg-light rounded grad-section9">
+            <h2 class="fw-bold text-white f-f"> <span>🥛</span>Dairy Products</h2>
+            <p class="fw-bold text-white fs-4 f-f"> Fresh dairy products from local farms</p>
+
+            <!-- Card-1 Milk -->
+            <div class="row  ">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh milk 1 gallon packed.jpg" alt="milk" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Whole Milk</h5>
+                    <p class="card-text text-muted">Farm fresh whole milk, 1 gallon</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$4/gallon</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card-2 Cheese-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/cheedar cheese on a desk in a plate.jpg" alt="cheese" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cheddar Cheese</h5>
+                    <p class="card-text text-muted">Sharp cheddar cheese block, 8 oz</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$4.49/8oz</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card-3 Eggs -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/dozzen eggs with a saveway logo in a carton.jpg" alt="eggs"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Free-Range Eggs</h5>
+                    <p class="card-text text-muted">Organic free-range eggs, dozen</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$6/dozen</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-4 Butter-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card">
+                  <div class="product-image ">
+                    <img src="images/butter box.jpg" alt="butter" class="w-100 rounded-top ">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Butter</h5>
+                    <p class="card-text text-muted">Unsalted butter sticks, 1lb package</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$4.99/1lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Meat Section -->
+      <section id="meat">
+        <div class="meat-section pt-5">
+          <div class="container bg-light rounded grad-section10">
+            <h2 class="fw-bold text-white f-f"> <span>🥩</span>Fresh Meat</h2>
+            <p class="fw-bold text-white fs-4 f-f"> Premium quality meat from trusted suppliers</p>
+
+            <!-- Card-1 Meat -->
+            <div class="row  ">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/Ground Beef in a box company packed saveway logo.jpg" alt="meat"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Ground Beef</h5>
+                    <p class="card-text text-muted">85% lean ground beef, fresh daily</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$6.99/lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-2 Cicken Meat-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/Chicken Breast in a box company packed saveway logo on a desk.jpg"
+                      alt="chicken meat" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Breast</h5>
+                    <p class="card-text text-muted">Boneless skinless chicken breast</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$8.99/lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-3 Fish -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/fresh salmon.jpg" alt="fish" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Salmon</h5>
+                    <p class="card-text text-muted">Atlantic salmon fillet, wild caught</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$12.99/lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-4 Mutton-->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card">
+                  <div class="product-image ">
+                    <img src="images/mutton in a box in freezer packed saveway logo sticker.jpg" alt="mutton"
+                      class="w-100 rounded-top ">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Mutton</h5>
+                    <p class="card-text text-muted">Mutton, shoulder chops, 1lb package</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$7.99/1lb</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bakery Section -->
+      <section id="Bakery">
+        <div class="Bakery-section my-5">
+          <div class="container bg-light rounded grad-section11">
+            <h2 class="fw-bold text-white f-f"> <span>🍞</span>Fresh Bakery</h2>
+            <p class="fw-bold text-white fs-4 f-f"> Freshly baked goods made daily</p>
+            <!-- Card-1 Bread-->
+            <div class="row  ">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/whole wheat bread of saveway market logo sticker packed.jpg" alt="bread"
+                      class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body ">
+                    <h5 class="card-title">Whole wheat bread</h5>
+                    <p class="card-text text-muted">Freshly baked whole wheat loaf</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$2.99/loaf</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-2 Croissants-->
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/Croissants in plate.jpg" alt="croissants" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Croissants</h5>
+                    <p class="card-text text-muted">Buttery croissants, pack of 6</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$4.99/pack</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-3 Bagels -->
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4 ">
+                <div class="card product-card ">
+                  <div class="product-image ">
+                    <img src="images/Bagels in plate.jpg" alt="bagels" class="w-100 rounded-top">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bagels</h5>
+                    <p class="card-text text-muted"> Whole wheat bagels, pack of 6</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$3.99/pack</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card-4 Cupcake-->
+              <div class=" col-sm-6 col-md-4 col-lg-3 mb-4 ">
+                <div class="card product-card">
+                  <div class="product-image ">
+                    <img src="images/Cupcakesin plate.jpg" alt="cup-cake" class="w-100 rounded-top ">
+                    <span class="badge badge-organic text-white">Organic</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cupcakes</h5>
+                    <p class="card-text text-muted ">Vanilla cupcakes, pack of 6 </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="price-tag">$8.99/pack</span>
+                      <!-- Trigger Modal Button -->
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <!-- Trigger Modal-End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Household Cleaning Products -->
+      <div class="row">
+        <!-- Card-1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card product-card d-flex flex-column h-100">
+            <div class="product-image">
+              <img src="images/mr-muscle.jpg" alt="new-brand" class="w-100 rounded-top">
+              <span class="badge badge-organic text-white">Organic</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mr. Muscle – All Purpose Cleaner</h5>
+              <p class="card-text text-muted">Cuts through grease and dirt with ease.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="price-tag">$4.99</span>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-2 Colin -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card product-card d-flex flex-column h-100">
+            <div class="product-image">
+              <img src="images/colin.jpg" alt="New-Brand" class="w-100 rounded-top">
+              <span class="badge badge-organic text-white">Organic</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Colin – Glass & Surface Cleaner</h5>
+              <p class="card-text text-muted">Gives mirrors and windows a streak-free shine.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="price-tag">$3.49</span>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-3 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card product-card d-flex flex-column h-100">
+            <div class="product-image">
+              <img src="images/DAWN.jpg" alt="New-Brand" class="w-100 rounded-top">
+              <span class="badge badge-organic text-white">Organic</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dawn – Dishwashing Liquid</h5>
+              <p class="card-text text-muted">Tough on grease, gentle on hands.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="price-tag">$2.99</span>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-4 Surf Excel -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card product-card d-flex flex-column h-100">
+            <div class="product-image">
+              <img src="images/SURF.jpg" alt="New-Brand" class="w-100 rounded-top">
+              <span class="badge badge-organic text-white">Organic</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Surf Excel – Laundry Detergent</h5>
+              <p class="card-text text-muted">Removes tough stains, keeps clothes bright.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="price-tag">$5.49</span>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End -->
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="about-p1 mb-0">&copy; 2025 Saveway Super Market | All Rights Reserved</p>
+      <div>
+        <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Update</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ✅ Item have been added to your cart!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue Shopping </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+  </section>
+  </section>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
